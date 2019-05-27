@@ -16,7 +16,11 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.springframework.ide.eclipse.core.springbuilder</name>
+=======
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+>>>>>>> a2f9a2f80cc9404fc3d87c82a366374ab7f1798e
 			<arguments>
 			</arguments>
 		</buildCommand>
@@ -26,7 +30,11 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.eclipse.m2e.core.maven2Builder</name>
+=======
+			<name>org.springframework.ide.eclipse.core.springbuilder</name>
+>>>>>>> a2f9a2f80cc9404fc3d87c82a366374ab7f1798e
 			<arguments>
 			</arguments>
 		</buildCommand>
