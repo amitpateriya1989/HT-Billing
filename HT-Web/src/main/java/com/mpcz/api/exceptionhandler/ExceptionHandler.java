@@ -7,6 +7,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.mpcz.exception.FormValidationException;
+import com.mpcz.exception.UserException;
 import com.mpcz.response.Response;
 
 @RestControllerAdvice
@@ -19,4 +20,10 @@ public class ExceptionHandler  extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(ex.getResponse(), HttpStatus.OK);
 	}
 	
+	@org.springframework.web.bind.annotation.ExceptionHandler(UserException.class)
+	public final ResponseEntity<Response> handleUserException(UserException ex,
+			WebRequest request) {
+		
+		return new ResponseEntity<>(ex.getResponse(), HttpStatus.OK);
+	}
 }
